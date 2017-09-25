@@ -82,6 +82,7 @@ type DeviceUpdateRequest struct {
 	Tags          []string `json:"tags"`
 	AlwaysPXE     bool     `json:"always_pxe,omitempty"`
 	IPXEScriptURL string   `json:"ipxe_script_url,omitempty"`
+	SpotInstance  bool     `json:"spot_instance,omitempty"`
 }
 
 func (d DeviceCreateRequest) String() string {
